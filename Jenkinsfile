@@ -1,13 +1,12 @@
 pipeline {
     agent any
-
     tools {
         jdk 'JDK 21'
         maven 'maven3'
     }
-
     environment {
         DOCKER_TAG = ''
+        TEAMS_WEBHOOK = 'https://telkomuniversityofficial.webhook.office.com/webhookb2/6a1bdddc-a025-4c59-b314-d4ca492ccdfd@90affe0f-c2a3-4108-bb98-6ceb4e94ef15/IncomingWebhook/73751f01c18546cb82b943f9a7c26896/a9372285-5933-4240-b618-f67784291e82/V2oT4SsOrjDLo8jc4dF05P5BGBIzeh33kFBmRRRFUN6XY1'
     }
 
     stages {
@@ -54,6 +53,9 @@ pipeline {
         }
 
         stage('Docker Build') {
+            when {
+                expression { currentBuild.result == null }
+            }
             steps {
                 script {
                     try {
@@ -71,19 +73,28 @@ pipeline {
             echo 'Cleaning up workspace...'
             cleanWs()
         }
-
+        
         success {
-            echo 'Pipeline completed successfully.'
-            discordSend description: "✅ Build berhasil! Image Docker berhasil dibuat dengan tag: ${env.DOCKER_TAG}. 🚀 Cek log lengkap di Jenkins.", 
-                        footer: 'Jenkins CI/CD - Build Sukses', 
-                        webhookURL: 'https://discord.com/api/webhooks/1321705546398826496/RQ5vHgFAOBJJUqxlOQdJrRVoIUC5ZMbaYTJEXlKsA3Z2T7UkhcgSVL7NaeLz8NL-k7hU'
+            script {
+                sendToTeams("✅ Build berhasil! Image Docker berhasil dibuat dengan tag: ${env.DOCKER_TAG}. 🚀 Cek log lengkap di Jenkins.")
+            }
         }
-
+        
         failure {
-            echo 'Pipeline failed. Check logs for details.'
-            discordSend description: '❌ Build gagal. Silakan cek detail error di Jenkins untuk penyebab kegagalan. ⚠️', 
-                        footer: 'Jenkins CI/CD - Build Gagal', 
-                        webhookURL: 'https://discord.com/api/webhooks/1321705546398826496/RQ5vHgFAOBJJUqxlOQdJrRVoIUC5ZMbaYTJEXlKsA3Z2T7UkhcgSVL7NaeLz8NL-k7hU'
+            script {
+                sendToTeams("❌ Build gagal. Silakan cek detail error di Jenkins untuk penyebab kegagalan. ⚠️")
+            }
         }
     }
+}
+
+def sendToTeams(message) {
+    def payload = """{
+        "text": "${message}"
+    }"""
+
+    httpRequest httpMode: 'POST', 
+                contentType: 'APPLICATION_JSON', 
+                requestBody: payload, 
+                url: env.TEAMS_WEBHOOK
 }
