@@ -1,0 +1,401 @@
+2024/12/11 07:29:57 [notice] 1#1: using the "epoll" event method
+2024/12/11 07:29:57 [notice] 1#1: nginx/1.27.2
+2024/12/11 07:29:57 [notice] 1#1: built by gcc 13.2.1 20240309 (Alpine 13.2.1_git20240309) 
+2024/12/11 07:29:57 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2024/12/11 07:29:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/11 07:29:57 [notice] 1#1: start worker processes
+2024/12/11 07:29:57 [notice] 1#1: start worker process 29
+2024/12/11 07:29:57 [notice] 1#1: start worker process 30
+2024/12/11 07:29:57 [notice] 1#1: start worker process 31
+2024/12/11 07:29:57 [notice] 1#1: start worker process 32
+2024/12/11 07:29:57 [notice] 1#1: start worker process 33
+2024/12/11 07:29:57 [notice] 1#1: start worker process 34
+2024/12/11 07:29:57 [notice] 1#1: start worker process 35
+2024/12/11 07:29:57 [notice] 1#1: start worker process 36
+2024/12/11 07:29:57 [notice] 1#1: start worker process 37
+2024/12/11 07:29:57 [notice] 1#1: start worker process 38
+2024/12/11 07:29:57 [notice] 1#1: start worker process 39
+2024/12/11 07:29:57 [notice] 1#1: start worker process 40
+2024/12/11 07:30:19 [error] 31#31: *3 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/11 07:31:27 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/12/11 07:31:27 [notice] 29#29: gracefully shutting down
+2024/12/11 07:31:27 [notice] 30#30: gracefully shutting down
+2024/12/11 07:31:27 [notice] 31#31: gracefully shutting down
+2024/12/11 07:31:27 [notice] 32#32: gracefully shutting down
+2024/12/11 07:31:27 [notice] 33#33: gracefully shutting down
+2024/12/11 07:31:27 [notice] 34#34: gracefully shutting down
+2024/12/11 07:31:27 [notice] 35#35: gracefully shutting down
+2024/12/11 07:31:27 [notice] 37#37: gracefully shutting down
+2024/12/11 07:31:27 [notice] 36#36: gracefully shutting down
+2024/12/11 07:31:27 [notice] 38#38: gracefully shutting down
+2024/12/11 07:31:27 [notice] 39#39: gracefully shutting down
+2024/12/11 07:31:27 [notice] 40#40: gracefully shutting down
+2024/12/11 07:31:27 [notice] 29#29: exiting
+2024/12/11 07:31:27 [notice] 30#30: exiting
+2024/12/11 07:31:27 [notice] 29#29: exit
+2024/12/11 07:31:27 [notice] 31#31: exiting
+2024/12/11 07:31:27 [notice] 32#32: exiting
+2024/12/11 07:31:27 [notice] 33#33: exiting
+2024/12/11 07:31:27 [notice] 34#34: exiting
+2024/12/11 07:31:27 [notice] 35#35: exiting
+2024/12/11 07:31:27 [notice] 37#37: exiting
+2024/12/11 07:31:27 [notice] 36#36: exiting
+2024/12/11 07:31:27 [notice] 38#38: exiting
+2024/12/11 07:31:27 [notice] 36#36: exit
+2024/12/11 07:31:27 [notice] 39#39: exiting
+2024/12/11 07:31:27 [notice] 40#40: exiting
+2024/12/11 07:31:27 [notice] 39#39: exit
+2024/12/11 07:31:27 [notice] 30#30: exit
+2024/12/11 07:31:27 [notice] 31#31: exit
+2024/12/11 07:31:27 [notice] 32#32: exit
+2024/12/11 07:31:27 [notice] 33#33: exit
+2024/12/11 07:31:27 [notice] 34#34: exit
+2024/12/11 07:31:27 [notice] 35#35: exit
+2024/12/11 07:31:27 [notice] 37#37: exit
+2024/12/11 07:31:27 [notice] 38#38: exit
+2024/12/11 07:31:27 [notice] 40#40: exit
+2024/12/11 07:31:27 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2024/12/11 07:31:27 [notice] 1#1: worker process 29 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: worker process 30 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: worker process 31 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: worker process 33 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: worker process 34 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: worker process 35 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: worker process 36 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: worker process 37 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: worker process 38 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: worker process 39 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/11 07:31:27 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2024/12/11 07:31:27 [notice] 1#1: signal 17 (SIGCHLD) received from 40
+2024/12/11 07:31:27 [notice] 1#1: worker process 40 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/11 07:31:27 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2024/12/11 07:31:27 [notice] 1#1: worker process 32 exited with code 0
+2024/12/11 07:31:27 [notice] 1#1: exit
+2024/12/11 07:41:09 [notice] 1#1: using the "epoll" event method
+2024/12/11 07:41:09 [notice] 1#1: nginx/1.27.2
+2024/12/11 07:41:09 [notice] 1#1: built by gcc 13.2.1 20240309 (Alpine 13.2.1_git20240309) 
+2024/12/11 07:41:09 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2024/12/11 07:41:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/11 07:41:09 [notice] 1#1: start worker processes
+2024/12/11 07:41:09 [notice] 1#1: start worker process 29
+2024/12/11 07:41:09 [notice] 1#1: start worker process 30
+2024/12/11 07:41:09 [notice] 1#1: start worker process 31
+2024/12/11 07:41:09 [notice] 1#1: start worker process 32
+2024/12/11 07:41:09 [notice] 1#1: start worker process 33
+2024/12/11 07:41:09 [notice] 1#1: start worker process 34
+2024/12/11 07:41:09 [notice] 1#1: start worker process 35
+2024/12/11 07:41:09 [notice] 1#1: start worker process 36
+2024/12/11 07:41:09 [notice] 1#1: start worker process 37
+2024/12/11 07:41:09 [notice] 1#1: start worker process 38
+2024/12/11 07:41:09 [notice] 1#1: start worker process 39
+2024/12/11 07:41:09 [notice] 1#1: start worker process 40
+2024/12/11 07:41:17 [error] 29#29: *1 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/11 07:41:31 [error] 29#29: *1 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/11 07:41:37 [error] 30#30: *5 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/transaksi"
+2024/12/11 08:20:18 [error] 32#32: *9 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/12 04:17:33 [notice] 1#1: using the "epoll" event method
+2024/12/12 04:17:33 [notice] 1#1: nginx/1.27.2
+2024/12/12 04:17:33 [notice] 1#1: built by gcc 13.2.1 20240309 (Alpine 13.2.1_git20240309) 
+2024/12/12 04:17:33 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2024/12/12 04:17:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/12 04:17:33 [notice] 1#1: start worker processes
+2024/12/12 04:17:33 [notice] 1#1: start worker process 29
+2024/12/12 04:17:33 [notice] 1#1: start worker process 30
+2024/12/12 04:17:33 [notice] 1#1: start worker process 31
+2024/12/12 04:17:33 [notice] 1#1: start worker process 32
+2024/12/12 04:17:33 [notice] 1#1: start worker process 33
+2024/12/12 04:17:33 [notice] 1#1: start worker process 34
+2024/12/12 04:17:33 [notice] 1#1: start worker process 35
+2024/12/12 04:17:33 [notice] 1#1: start worker process 36
+2024/12/12 04:17:33 [notice] 1#1: start worker process 37
+2024/12/12 04:17:33 [notice] 1#1: start worker process 38
+2024/12/12 04:17:33 [notice] 1#1: start worker process 39
+2024/12/12 04:17:33 [notice] 1#1: start worker process 40
+2024/12/15 09:41:12 [notice] 1#1: using the "epoll" event method
+2024/12/15 09:41:12 [notice] 1#1: nginx/1.27.2
+2024/12/15 09:41:12 [notice] 1#1: built by gcc 13.2.1 20240309 (Alpine 13.2.1_git20240309) 
+2024/12/15 09:41:12 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2024/12/15 09:41:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/15 09:41:12 [notice] 1#1: start worker processes
+2024/12/15 09:41:12 [notice] 1#1: start worker process 29
+2024/12/15 09:41:12 [notice] 1#1: start worker process 30
+2024/12/15 09:41:12 [notice] 1#1: start worker process 31
+2024/12/15 09:41:12 [notice] 1#1: start worker process 32
+2024/12/15 09:41:12 [notice] 1#1: start worker process 33
+2024/12/15 09:41:12 [notice] 1#1: start worker process 34
+2024/12/15 09:41:12 [notice] 1#1: start worker process 35
+2024/12/15 09:41:12 [notice] 1#1: start worker process 36
+2024/12/15 09:41:12 [notice] 1#1: start worker process 37
+2024/12/15 09:41:12 [notice] 1#1: start worker process 38
+2024/12/15 09:41:12 [notice] 1#1: start worker process 39
+2024/12/15 09:41:12 [notice] 1#1: start worker process 40
+2024/12/19 14:34:40 [notice] 1#1: using the "epoll" event method
+2024/12/19 14:34:40 [notice] 1#1: nginx/1.27.2
+2024/12/19 14:34:40 [notice] 1#1: built by gcc 13.2.1 20240309 (Alpine 13.2.1_git20240309) 
+2024/12/19 14:34:40 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2024/12/19 14:34:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/19 14:34:40 [notice] 1#1: start worker processes
+2024/12/19 14:34:40 [notice] 1#1: start worker process 29
+2024/12/19 14:34:40 [notice] 1#1: start worker process 30
+2024/12/19 14:34:40 [notice] 1#1: start worker process 31
+2024/12/19 14:34:40 [notice] 1#1: start worker process 32
+2024/12/19 14:34:40 [notice] 1#1: start worker process 33
+2024/12/19 14:34:40 [notice] 1#1: start worker process 34
+2024/12/19 14:34:40 [notice] 1#1: start worker process 35
+2024/12/19 14:34:40 [notice] 1#1: start worker process 36
+2024/12/19 14:34:40 [notice] 1#1: start worker process 37
+2024/12/19 14:34:40 [notice] 1#1: start worker process 38
+2024/12/19 14:34:40 [notice] 1#1: start worker process 39
+2024/12/19 14:34:40 [notice] 1#1: start worker process 40
+2024/12/19 14:35:44 [error] 32#32: *4 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/19 14:37:28 [error] 36#36: *11 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/19 14:37:35 [error] 35#35: *10 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/transaksi"
+2024/12/19 15:55:44 [error] 38#38: *14 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/19 15:55:59 [error] 38#38: *14 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/19 15:56:05 [error] 38#38: *14 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/19 15:56:09 [error] 38#38: *14 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/19 17:19:31 [error] 39#39: *23 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/19 17:23:36 [error] 31#31: *33 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/19 17:51:27 [error] 30#30: *71 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/19 17:51:32 [error] 30#30: *71 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/19 18:06:02 [error] 30#30: *92 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/19 18:06:02 [error] 30#30: *92 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/19 18:06:49 [error] 30#30: *92 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/19 18:08:48 [error] 30#30: *96 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/19 18:09:23 [error] 30#30: *96 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/19 18:09:49 [error] 30#30: *96 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/19 18:11:27 [error] 30#30: *96 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/19 18:12:21 [error] 30#30: *96 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/19 18:12:36 [error] 30#30: *96 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/19 18:12:52 [error] 30#30: *96 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 07:06:47 [error] 30#30: *105 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 07:07:53 [error] 30#30: *105 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 07:08:04 [error] 30#30: *105 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 07:08:16 [error] 30#30: *105 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 07:08:25 [error] 30#30: *105 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 07:08:37 [error] 30#30: *105 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 07:08:46 [error] 30#30: *105 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/log-users"
+2024/12/20 07:08:51 [error] 30#30: *122 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/users"
+2024/12/20 07:10:19 [error] 30#30: *124 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 07:10:31 [error] 30#30: *124 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 07:11:06 [error] 30#30: *124 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 07:12:46 [error] 30#30: *133 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 11:31:11 [error] 30#30: *136 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 11:31:52 [error] 30#30: *136 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 11:32:02 [error] 30#30: *136 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 11:39:30 [error] 30#30: *148 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 11:39:39 [error] 30#30: *148 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 11:39:53 [error] 30#30: *155 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 11:40:02 [error] 30#30: *155 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 11:40:17 [error] 30#30: *155 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 11:40:44 [error] 30#30: *155 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 11:40:50 [error] 30#30: *155 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/20 11:53:17 [error] 30#30: *168 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/20 11:53:25 [error] 32#32: *172 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 11:53:31 [error] 32#32: *172 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/20 11:53:58 [error] 32#32: *172 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/20 11:56:36 [error] 32#32: *176 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/20 11:56:44 [error] 32#32: *176 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 12:03:54 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 12:04:00 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/20 12:04:18 [warn] 32#32: *180 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/20 12:04:25 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 12:04:40 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 12:04:49 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 12:04:56 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 12:05:22 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 12:05:27 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 12:05:35 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 12:05:56 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 12:06:14 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 12:06:38 [error] 32#32: *180 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 12:06:45 [error] 32#32: *202 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 12:07:01 [error] 32#32: *202 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 12:08:24 [error] 32#32: *206 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 12:08:38 [error] 32#32: *206 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 12:08:48 [error] 32#32: *206 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 12:11:54 [error] 32#32: *213 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 12:12:00 [error] 32#32: *213 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/1/edit"
+2024/12/20 12:14:00 [error] 32#32: *216 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 12:14:30 [error] 32#32: *216 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/1/edit"
+2024/12/20 12:14:40 [error] 32#32: *216 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 12:18:14 [error] 32#32: *220 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 12:18:19 [error] 32#32: *220 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/1/edit"
+2024/12/20 12:18:34 [error] 32#32: *220 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 12:18:42 [error] 32#32: *220 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/2/edit"
+2024/12/20 12:18:53 [warn] 32#32: *220 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000002, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu/2 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/2/edit"
+2024/12/20 12:18:57 [error] 32#32: *220 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 13:38:56 [error] 32#32: *235 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 13:57:55 [error] 29#29: *251 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 14:11:33 [error] 29#29: *265 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/transaksi"
+2024/12/20 14:11:42 [error] 29#29: *265 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 14:11:46 [error] 29#29: *265 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/profile"
+2024/12/20 14:11:54 [error] 29#29: *265 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 14:12:04 [error] 29#29: *265 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 14:12:12 [error] 29#29: *265 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 14:12:23 [error] 29#29: *265 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 14:12:29 [error] 29#29: *265 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 14:14:53 [error] 29#29: *280 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:15:11 [error] 29#29: *280 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:20:36 [error] 29#29: *284 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:20:53 [error] 29#29: *284 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:21:23 [error] 29#29: *284 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:22:18 [error] 29#29: *284 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:23:06 [error] 29#29: *284 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:23:20 [error] 29#29: *284 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:26:14 [error] 29#29: *294 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:26:28 [error] 29#29: *294 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:28:36 [error] 29#29: *299 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:28:49 [error] 29#29: *299 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:28:57 [error] 29#29: *299 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:30:22 [error] 29#29: *305 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:30:33 [error] 29#29: *305 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 14:33:16 [error] 29#29: *309 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 14:33:19 [error] 29#29: *309 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 14:33:35 [error] 29#29: *309 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 14:33:39 [error] 29#29: *309 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 15:00:03 [error] 33#33: *348 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 15:00:24 [error] 33#33: *348 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:22:33 [error] 33#33: *352 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 17:22:43 [error] 33#33: *352 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 17:22:47 [error] 33#33: *352 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:24:02 [error] 33#33: *358 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:24:47 [error] 33#33: *358 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:28:25 [error] 33#33: *361 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:28:49 [error] 33#33: *361 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:30:28 [error] 33#33: *365 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:30:53 [error] 33#33: *365 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:43:14 [error] 33#33: *371 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:43:33 [error] 33#33: *371 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:43:42 [error] 33#33: *371 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:48:59 [error] 33#33: *377 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 17:49:11 [error] 33#33: *377 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 17:49:16 [error] 33#33: *377 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/transaksi"
+2024/12/20 17:49:22 [error] 33#33: *377 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 17:49:25 [error] 33#33: *377 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/20 17:49:51 [error] 33#33: *387 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 17:50:00 [error] 33#33: *387 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 17:50:10 [error] 33#33: *387 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 17:50:15 [error] 33#33: *387 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 17:50:21 [error] 33#33: *387 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:55:30 [error] 33#33: *395 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:55:46 [error] 33#33: *395 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:56:02 [error] 33#33: *395 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:56:09 [error] 33#33: *395 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 17:56:16 [error] 33#33: *395 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 17:56:21 [error] 33#33: *395 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 17:56:36 [error] 33#33: *395 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 17:58:11 [error] 33#33: *409 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 18:08:02 [error] 33#33: *412 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 18:08:10 [error] 33#33: *412 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 18:10:17 [error] 34#34: *415 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 18:10:37 [error] 34#34: *415 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 18:10:59 [error] 34#34: *415 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 18:11:08 [error] 34#34: *415 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 18:11:27 [error] 34#34: *415 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 18:11:38 [error] 34#34: *426 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/transaksi"
+2024/12/20 18:11:43 [error] 34#34: *426 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/transaksi"
+2024/12/20 18:11:47 [error] 34#34: *432 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 18:11:53 [error] 34#34: *432 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/20 18:12:10 [warn] 34#34: *432 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000003, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/20 18:12:14 [error] 34#34: *432 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu"
+2024/12/20 18:12:21 [error] 34#34: *432 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/20 18:12:31 [error] 34#34: *432 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard"
+2024/12/20 18:12:36 [error] 34#34: *432 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier"
+2024/12/20 18:12:42 [error] 34#34: *432 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/20 18:12:57 [error] 34#34: *432 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/cashier/create"
+2024/12/21 05:55:48 [error] 34#34: *447 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/21 05:56:53 [error] 34#34: *447 open() "/var/www/kasir_vnt/public/livewire/livewire.js" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /livewire/livewire.js?id=90730a3b0e7144480175 HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/"
+2024/12/25 13:56:12 [notice] 1#1: using the "epoll" event method
+2024/12/25 13:56:12 [notice] 1#1: nginx/1.27.2
+2024/12/25 13:56:12 [notice] 1#1: built by gcc 13.2.1 20240309 (Alpine 13.2.1_git20240309) 
+2024/12/25 13:56:12 [notice] 1#1: OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2024/12/25 13:56:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/25 13:56:12 [notice] 1#1: start worker processes
+2024/12/25 13:56:12 [notice] 1#1: start worker process 29
+2024/12/25 13:56:12 [notice] 1#1: start worker process 30
+2024/12/25 13:56:12 [notice] 1#1: start worker process 31
+2024/12/25 13:56:12 [notice] 1#1: start worker process 32
+2024/12/25 13:56:12 [notice] 1#1: start worker process 33
+2024/12/25 13:56:12 [notice] 1#1: start worker process 34
+2024/12/25 13:56:12 [notice] 1#1: start worker process 35
+2024/12/25 13:56:12 [notice] 1#1: start worker process 36
+2024/12/25 13:56:12 [notice] 1#1: start worker process 37
+2024/12/25 13:56:12 [notice] 1#1: start worker process 38
+2024/12/25 13:56:12 [notice] 1#1: start worker process 39
+2024/12/25 13:56:12 [notice] 1#1: start worker process 40
+2024/12/26 08:45:42 [warn] 29#29: *46 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 09:08:59 [warn] 29#29: *62 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000002, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 09:09:24 [warn] 29#29: *62 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000003, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 10:31:35 [warn] 30#30: *185 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000004, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:19:06 [warn] 37#37: *706 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000005, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:21:52 [warn] 37#37: *717 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000006, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:22:41 [warn] 37#37: *722 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000007, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:23:09 [warn] 37#37: *727 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000008, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:23:40 [warn] 37#37: *732 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000009, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:26:01 [warn] 37#37: *740 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000010, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:26:27 [warn] 37#37: *745 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000011, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:26:57 [warn] 38#38: *750 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000012, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:27:29 [warn] 38#38: *750 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000013, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:28:13 [warn] 38#38: *750 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000014, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:28:51 [warn] 38#38: *750 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000015, client: 172.19.0.1, server: localhost, request: "POST /dashboard/menu HTTP/1.1", host: "localhost:2022", referrer: "http://localhost:2022/dashboard/menu/create"
+2024/12/26 19:54:09 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/12/26 19:54:09 [notice] 37#37: gracefully shutting down
+2024/12/26 19:54:09 [notice] 38#38: gracefully shutting down
+2024/12/26 19:54:09 [notice] 29#29: gracefully shutting down
+2024/12/26 19:54:09 [notice] 33#33: gracefully shutting down
+2024/12/26 19:54:09 [notice] 32#32: gracefully shutting down
+2024/12/26 19:54:09 [notice] 36#36: gracefully shutting down
+2024/12/26 19:54:09 [notice] 30#30: gracefully shutting down
+2024/12/26 19:54:09 [notice] 31#31: gracefully shutting down
+2024/12/26 19:54:09 [notice] 40#40: gracefully shutting down
+2024/12/26 19:54:09 [notice] 35#35: gracefully shutting down
+2024/12/26 19:54:09 [notice] 34#34: gracefully shutting down
+2024/12/26 19:54:09 [notice] 39#39: gracefully shutting down
+2024/12/26 19:54:09 [notice] 32#32: exiting
+2024/12/26 19:54:09 [notice] 36#36: exiting
+2024/12/26 19:54:09 [notice] 38#38: exiting
+2024/12/26 19:54:09 [notice] 33#33: exiting
+2024/12/26 19:54:09 [notice] 29#29: exiting
+2024/12/26 19:54:09 [notice] 37#37: exiting
+2024/12/26 19:54:09 [notice] 40#40: exiting
+2024/12/26 19:54:09 [notice] 31#31: exiting
+2024/12/26 19:54:09 [notice] 30#30: exiting
+2024/12/26 19:54:09 [notice] 34#34: exiting
+2024/12/26 19:54:09 [notice] 35#35: exiting
+2024/12/26 19:54:09 [notice] 39#39: exiting
+2024/12/26 19:54:09 [notice] 31#31: exit
+2024/12/26 19:54:09 [notice] 38#38: exit
+2024/12/26 19:54:09 [notice] 40#40: exit
+2024/12/26 19:54:09 [notice] 37#37: exit
+2024/12/26 19:54:09 [notice] 36#36: exit
+2024/12/26 19:54:09 [notice] 35#35: exit
+2024/12/26 19:54:09 [notice] 39#39: exit
+2024/12/26 19:54:09 [notice] 29#29: exit
+2024/12/26 19:54:09 [notice] 30#30: exit
+2024/12/26 19:54:09 [notice] 34#34: exit
+2024/12/26 19:54:09 [notice] 33#33: exit
+2024/12/26 19:54:09 [notice] 32#32: exit
+2024/12/26 19:54:09 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2024/12/26 19:54:09 [notice] 1#1: worker process 35 exited with code 0
+2024/12/26 19:54:09 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/26 19:54:10 [notice] 1#1: signal 17 (SIGCHLD) received from 39
+2024/12/26 19:54:10 [notice] 1#1: worker process 39 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/26 19:54:10 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2024/12/26 19:54:10 [notice] 1#1: worker process 37 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: worker process 30 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: worker process 31 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: worker process 34 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: worker process 29 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: worker process 32 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: worker process 38 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: worker process 40 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/26 19:54:10 [notice] 1#1: signal 17 (SIGCHLD) received from 38
+2024/12/26 19:54:10 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2024/12/26 19:54:10 [notice] 1#1: worker process 33 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: worker process 36 exited with code 0
+2024/12/26 19:54:10 [notice] 1#1: exit
