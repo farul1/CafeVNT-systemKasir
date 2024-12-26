@@ -1,41 +1,41 @@
-<p align="center">
-    <img src="public/img/logo.png" width="180px">
-</p>
 
-<h1 align="center">
-    BisaNgopi Cashier App
-</h1>
+# Coffee VNT Management System
 
-<p>
-    This project have 3 roles :
-</p>
+Coffee VNT Management System adalah aplikasi berbasis web yang dirancang untuk mempermudah pengelolaan operasional di Coffee Shop VNT. Aplikasi ini berfokus pada pengelolaan data pengguna, menu, transaksi, dan aktivitas log pengguna yang dapat diakses oleh tiga peran utama: Admin, Manager, dan Kasir.
 
-- Admin
-- Manager
-- Cashier
+## Fitur Utama
 
-Here are some demos :
+### **Admin**
+- Melihat dashboard dengan data user dan menu.
+- Menambahkan user baru.
+- Mengekspor data user ke format Excel dan PDF.
+- Melihat log aktivitas pengguna (seperti penambahan user atau ekspor data).
+- Mengelola profil pengguna.
 
-<h3>1. Admin</h3>
+### **Manager**
+- Melihat dashboard dengan data serupa Admin.
+- Menambahkan dan mengelola menu makanan dan minuman.
+- Mengekspor data menu dan transaksi ke Excel dan PDF.
+- Melihat data transaksi (nama pelanggan, menu, jumlah, total, nama pegawai, tanggal transaksi).
+- Mengelola profil pengguna.
 
-<img src="public/img/admin-demo.gif">
+### **Kasir**
+- Melihat dashboard serupa Admin.
+- Mengelola transaksi pelanggan (nama pelanggan, menu yang dipesan, total harga).
+- Mengekspor data transaksi ke Excel dan PDF.
+- Mengelola profil pengguna.
 
-<h3>2. Manager</h3>
+## Teknologi yang Digunakan
+- **Backend Framework:** Laravel (PHP)
+- **Frontend Framework:** Blade (Laravel Template Engine)
+- **Database:** MySQL
+- **CI/CD Tools:** Jenkins, Ngrok
+- **Containerization:** Docker
+- **Version Control:** Git, GitHub
 
-<img src="public/img/manager-demo.gif">
+## Instalasi
 
-<h3>3. Cashier</h3>
-
-<img src="public/img/cashier-demo.gif">
-
-## Clone This Repository
-
-- Run `git clone https://github.com/Syafwan000/bisa-ngopi` on your cmd or terminal
-- Go to the folder application using `cd` command on your cmd or terminal
-- Run `composer install` on your cmd or terminal
-- Copy `.env.example` file to `.env` on the root folder
-- Open your `.env` file and change the database name (`DB_DATABASE`) to whatever you have, username (`DB_USERNAME`) and password (`DB_PASSWORD`) field correspond to your configuration
-- Run `php artisan key:generate`
-- Run `php artisan migrate`
-- Run `php artisan serve`
-- Go to http://localhost:8000/
+### **1. Clone Repository**
+```bash
+git clone https://github.com/<username>/coffee-vnt-management-system.git
+cd coffee-vnt-management-system
