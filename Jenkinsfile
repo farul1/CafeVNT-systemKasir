@@ -13,8 +13,8 @@ pipeline {
             steps {
                 script {
                     try {
-                        git credentialsId: 'cafevnt-github', 
-                            url: 'https://github.com/syafarul/VNT_mesinkasirr'
+                        git credentialsId: 'cafevnt-github',
+                            url: 'https://github.com/farul1/CafeVNT-systemKasir'
                     } catch (Exception e) {
                         error "SCM checkout failed: ${e.message}"
                     }
@@ -65,6 +65,38 @@ pipeline {
                 }
             }
         }
+
+        stage('Setup Server with Ansible') {
+            steps {
+                script {
+                    try {
+                        withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
+                            sh """
+                            ansible-playbook -i inventory.ini setup-server.yml --private-key \$SSH_KEY
+                            """
+                        }
+                    } catch (Exception e) {
+                        error "Ansible setup failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Deploy Application with Ansible') {
+            steps {
+                script {
+                    try {
+                        withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
+                            sh """
+                            ansible-playbook -i inventory.ini deploy-app.yml --private-key \$SSH_KEY
+                            """
+                        }
+                    } catch (Exception e) {
+                        error "Ansible deploy failed: ${e.message}"
+                    }
+                }
+            }
+        }
     }
 
     post {
@@ -72,11 +104,19 @@ pipeline {
             echo 'Cleaning up workspace...'
             cleanWs()
         }
+
         success {
             echo 'Pipeline completed successfully.'
+            discordSend description: "✅ Build berhasil! Image Docker berhasil dibuat dengan tag: ${env.DOCKER_TAG}. 🚀 Cek log lengkap di Jenkins.",
+                        footer: 'Jenkins CI/CD - Build Sukses',
+                        webhookURL: 'https://discord.com/api/webhooks/1321977592731144226/ua7asoAR0O5KAFQrUgZHrYunx-1L_mLBgV6hp08Xe960xDgAUXkMRh0FeJRjcrIypjr1'
         }
+
         failure {
             echo 'Pipeline failed. Check logs for details.'
+            discordSend description: '❌ Build gagal. Silakan cek detail error di Jenkins untuk penyebab kegagalan. ⚠',
+                        footer: 'Jenkins CI/CD - Build Gagal',
+                        webhookURL: 'https://discord.com/api/webhooks/1321977592731144226/ua7asoAR0O5KAFQrUgZHrYunx-1L_mLBgV6hp08Xe960xDgAUXkMRh0FeJRjcrIypjr1'
         }
     }
 }
