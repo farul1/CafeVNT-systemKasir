@@ -71,7 +71,7 @@ pipeline {
                 script {
                     try {
                         withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
-                            sh """
+                            bat """
                             ansible-playbook -i inventory.ini setup-server.yml --private-key \$SSH_KEY
                             """
                         }
@@ -87,7 +87,7 @@ pipeline {
                 script {
                     try {
                         withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
-                            sh """
+                            bat """
                             ansible-playbook -i inventory.ini deploy-app.yml --private-key \$SSH_KEY
                             """
                         }
