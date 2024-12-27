@@ -1,15 +1,16 @@
 pipeline {
     agent any
     tools {
-        jdk 'JDK 21'
-        maven 'maven3'
+        jdk 'JDK 21'          
+        maven 'maven3'         
+        ansible 'Ansible 2.9'   
     }
     environment {
         DOCKER_TAG = ''
     }
 
     stages {
-        stage('SCM') { // Checkout repository first
+        stage('SCM') {
             steps {
                 script {
                     try {
@@ -22,7 +23,7 @@ pipeline {
             }
         }
 
-        stage('Set Version') { // Moved after SCM
+        stage('Set Version') { 
             steps {
                 script {
                     try {
@@ -35,7 +36,7 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
+        stage('Install Dependencies') { 
             steps {
                 script {
                     try {
@@ -51,7 +52,7 @@ pipeline {
             }
         }
 
-        stage('Docker Build') {
+        stage('Docker Build') { 
             when {
                 expression { currentBuild.result == null }
             }
@@ -66,14 +67,12 @@ pipeline {
             }
         }
 
-        stage('Setup Server with Ansible') {
+        stage('Setup Server with Ansible') { 
             steps {
                 script {
                     try {
                         withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
-                            bat """
-                            ansible-playbook -i inventory.ini setup-server.yml --private-key \$SSH_KEY
-                            """
+                            ansiblePlaybook playbook: 'setup-server.yml', inventory: 'inventory.ini', extraVars: [ansible_ssh_private_key_file: "${SSH_KEY}"]
                         }
                     } catch (Exception e) {
                         error "Ansible setup failed: ${e.message}"
@@ -82,14 +81,12 @@ pipeline {
             }
         }
 
-        stage('Deploy Application with Ansible') {
+        stage('Deploy Application with Ansible') { 
             steps {
                 script {
                     try {
                         withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
-                            bat """
-                            ansible-playbook -i inventory.ini deploy-app.yml --private-key \$SSH_KEY
-                            """
+                            ansiblePlaybook playbook: 'deploy-app.yml', inventory: 'inventory.ini', extraVars: [ansible_ssh_private_key_file: "${SSH_KEY}"]
                         }
                     } catch (Exception e) {
                         error "Ansible deploy failed: ${e.message}"
