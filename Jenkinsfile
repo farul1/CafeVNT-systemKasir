@@ -6,15 +6,14 @@ pipeline {
     }
     environment {
         DOCKER_TAG = ''
-        TEAMS_WEBHOOK = 'https://telkomuniversityofficial.webhook.office.com/webhookb2/6a1bdddc-a025-4c59-b314-d4ca492ccdfd@90affe0f-c2a3-4108-bb98-6ceb4e94ef15/IncomingWebhook/73751f01c18546cb82b943f9a7c26896/a9372285-5933-4240-b618-f67784291e82/V2oT4SsOrjDLo8jc4dF05P5BGBIzeh33kFBmRRRFUN6XY1'
     }
 
     stages {
-        stage('SCM') {
+        stage('SCM') { // Checkout repository first
             steps {
                 script {
                     try {
-                        git credentialsId: 'cafevnt-github', 
+                        git credentialsId: 'cafevnt-github',
                             url: 'https://github.com/farul1/CafeVNT-systemKasir'
                     } catch (Exception e) {
                         error "SCM checkout failed: ${e.message}"
@@ -23,7 +22,7 @@ pipeline {
             }
         }
 
-        stage('Set Version') {
+        stage('Set Version') { // Moved after SCM
             steps {
                 script {
                     try {
@@ -66,6 +65,38 @@ pipeline {
                 }
             }
         }
+
+        stage('Setup Server with Ansible') {
+            steps {
+                script {
+                    try {
+                        withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
+                            sh """
+                            ansible-playbook -i inventory.ini setup-server.yml --private-key \$SSH_KEY
+                            """
+                        }
+                    } catch (Exception e) {
+                        error "Ansible setup failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Deploy Application with Ansible') {
+            steps {
+                script {
+                    try {
+                        withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
+                            sh """
+                            ansible-playbook -i inventory.ini deploy-app.yml --private-key \$SSH_KEY
+                            """
+                        }
+                    } catch (Exception e) {
+                        error "Ansible deploy failed: ${e.message}"
+                    }
+                }
+            }
+        }
     }
 
     post {
@@ -73,28 +104,19 @@ pipeline {
             echo 'Cleaning up workspace...'
             cleanWs()
         }
-        
+
         success {
-            script {
-                sendToTeams("✅ Build berhasil! Image Docker berhasil dibuat dengan tag: ${env.DOCKER_TAG}. 🚀 Cek log lengkap di Jenkins.")
-            }
+            echo 'Pipeline completed successfully.'
+            discordSend description: "✅ Build berhasil! Image Docker berhasil dibuat dengan tag: ${env.DOCKER_TAG}. 🚀 Cek log lengkap di Jenkins.",
+                        footer: 'Jenkins CI/CD - Build Sukses',
+                        webhookURL: 'https://discord.com/api/webhooks/1321977592731144226/ua7asoAR0O5KAFQrUgZHrYunx-1L_mLBgV6hp08Xe960xDgAUXkMRh0FeJRjcrIypjr1'
         }
-        
+
         failure {
-            script {
-                sendToTeams("❌ Build gagal. Silakan cek detail error di Jenkins untuk penyebab kegagalan. ⚠️")
-            }
+            echo 'Pipeline failed. Check logs for details.'
+            discordSend description: '❌ Build gagal. Silakan cek detail error di Jenkins untuk penyebab kegagalan. ⚠',
+                        footer: 'Jenkins CI/CD - Build Gagal',
+                        webhookURL: 'https://discord.com/api/webhooks/1321977592731144226/ua7asoAR0O5KAFQrUgZHrYunx-1L_mLBgV6hp08Xe960xDgAUXkMRh0FeJRjcrIypjr1'
         }
     }
-}
-
-def sendToTeams(message) {
-    def payload = """{
-        "text": "${message}"
-    }"""
-
-    httpRequest httpMode: 'POST', 
-                contentType: 'APPLICATION_JSON', 
-                requestBody: payload, 
-                url: env.TEAMS_WEBHOOK
 }
