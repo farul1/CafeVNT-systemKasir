@@ -1,0 +1,19 @@
+---
+- name: Setup Server
+  hosts: servers
+  become: yes
+  tasks:
+    - name: Install PHP
+      apt:
+        name: php
+        state: present
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Install Composer
+      shell: curl -sS https://getcomposer.org/installer | php
+      args:
+        creates: /usr/local/bin/composer
