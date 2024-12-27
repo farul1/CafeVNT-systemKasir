@@ -1,14 +1,11 @@
 pipeline {
     agent any
     tools {
-        jdk 'JDK 21'           // Pastikan JDK 21 sudah dikonfigurasi di Jenkins Tools
-        maven 'maven3'          // Pastikan Maven 3 sudah dikonfigurasi di Jenkins Tools
-        ansible 'Ansible 2.9'   // Pastikan Ansible 2.9 sudah dikonfigurasi di Jenkins Tools
+        jdk 'JDK 21'
+        maven 'maven3'
     }
     environment {
         DOCKER_TAG = ''
-        // Sesuaikan path Ansible dengan sistem Anda (Windows path untuk Ansible)
-        ANSIBLE_PATH = 'C:/Windows/System32/wsl.exe'
     }
 
     stages {
@@ -68,39 +65,6 @@ pipeline {
                 }
             }
         }
-
-        stage('Setup Server with Ansible') {
-            steps {
-                script {
-                    try {
-                        withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
-                            withEnv(["PATH+ANSIBLE=${ANSIBLE_PATH}"]) {
-                                // Gunakan ansiblePlaybook dengan path yang sesuai
-                                ansiblePlaybook playbook: 'setup-server.yml', inventory: 'inventory.ini', extraVars: [ansible_ssh_private_key_file: "${SSH_KEY}"]
-                            }
-                        }
-                    } catch (Exception e) {
-                        error "Ansible setup failed: ${e.message}"
-                    }
-                }
-            }
-        }
-
-        stage('Deploy Application with Ansible') {
-            steps {
-                script {
-                    try {
-                        withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
-                            withEnv(["PATH+ANSIBLE=${ANSIBLE_PATH}"]) {
-                                ansiblePlaybook playbook: 'deploy-app.yml', inventory: 'inventory.ini', extraVars: [ansible_ssh_private_key_file: "${SSH_KEY}"]
-                            }
-                        }
-                    } catch (Exception e) {
-                        error "Ansible deploy failed: ${e.message}"
-                    }
-                }
-            }
-        }
     }
 
     post {
@@ -111,14 +75,14 @@ pipeline {
 
         success {
             echo 'Pipeline completed successfully.'
-            discordSend description: "✅ Build berhasil! Image Docker berhasil dibuat dengan tag: ${env.DOCKER_TAG}. 🚀 Cek log lengkap di Jenkins.",
+            discordSend description: "🚀 **Build Sukses!** Docker image berhasil dibangun dengan tag: ${env.DOCKER_TAG}. 🎉 Siapkan dirimu untuk meluncurkan sistem kasir ke dunia! Cek log lengkap di Jenkins dan siapkan kopi ☕ untuk merayakan! 🎉",
                         footer: 'Jenkins CI/CD - Build Sukses',
                         webhookURL: 'https://discord.com/api/webhooks/1321977592731144226/ua7asoAR0O5KAFQrUgZHrYunx-1L_mLBgV6hp08Xe960xDgAUXkMRh0FeJRjcrIypjr1'
         }
 
         failure {
             echo 'Pipeline failed. Check logs for details.'
-            discordSend description: '❌ Build gagal. Silakan cek detail error di Jenkins untuk penyebab kegagalan. ⚠',
+            discordSend description: '❌ **Build Gagal!** Aduh, sepertinya ada yang salah! Cek detail error di Jenkins untuk mengetahui apa yang perlu diperbaiki. Jangan khawatir, kita pasti bisa atasi ini! 💪',
                         footer: 'Jenkins CI/CD - Build Gagal',
                         webhookURL: 'https://discord.com/api/webhooks/1321977592731144226/ua7asoAR0O5KAFQrUgZHrYunx-1L_mLBgV6hp08Xe960xDgAUXkMRh0FeJRjcrIypjr1'
         }
