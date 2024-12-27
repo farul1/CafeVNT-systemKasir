@@ -8,7 +8,7 @@ pipeline {
     environment {
         DOCKER_TAG = ''
         // Sesuaikan path Ansible dengan sistem Anda (Windows path untuk Ansible)
-        ANSIBLE_PATH = 'C:/Users/SP/AppData/Local/Programs/Python/Python311/Scripts/ansible.exe'
+        ANSIBLE_PATH = 'C:/Windows/System32/wsl.exe'
     }
 
     stages {
