@@ -1,8 +1,26 @@
 ---
 - name: Setup Server
-  hosts: servers
-  become: yes
+  hosts: webservers  # Grub host webservers yang ada di inventory.ini
+  become: yes  # Gunakan sudo untuk eksekusi task
   tasks:
+  
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600  # Cache valid selama 1 jam
+
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Start Apache
+      service:
+        name: apache2
+        state: started
+        enabled: yes  # Pastikan Apache berjalan setiap boot
+
     - name: Install PHP
       apt:
         name: php
@@ -13,7 +31,26 @@
         name: docker.io
         state: present
 
+    - name: Start Docker
+      service:
+        name: docker
+        state: started
+        enabled: yes  # Pastikan Docker berjalan setiap boot
+
     - name: Install Composer
       shell: curl -sS https://getcomposer.org/installer | php
       args:
         creates: /usr/local/bin/composer
+
+    - name: Move Composer to bin
+      command: mv /root/composer.phar /usr/local/bin/composer
+      when: ansible_facts['distribution'] == 'Ubuntu'  # Cek distribusi sistem operasi
+
+    - name: Verify PHP Version
+      command: php -v
+      register: php_version
+      changed_when: false
+
+    - name: Output PHP Version
+      debug:
+        msg: "PHP version is: {{ php_version.stdout }}"
