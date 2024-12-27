@@ -1,12 +1,14 @@
 pipeline {
     agent any
     tools {
-        jdk 'JDK 21'          
-        maven 'maven3'         
-        ansible 'Ansible 2.9'   
+        jdk 'JDK 21'           // Pastikan JDK 21 sudah dikonfigurasi di Jenkins Tools
+        maven 'maven3'          // Pastikan Maven 3 sudah dikonfigurasi di Jenkins Tools
+        ansible 'Ansible 2.9'   // Pastikan Ansible 2.9 sudah dikonfigurasi di Jenkins Tools
     }
     environment {
         DOCKER_TAG = ''
+        // Sesuaikan path Ansible dengan sistem Anda (Windows path untuk Ansible)
+        ANSIBLE_PATH = 'C:/Users/SP/AppData/Local/Programs/Python/Python311/Scripts/ansible.exe'
     }
 
     stages {
@@ -23,7 +25,7 @@ pipeline {
             }
         }
 
-        stage('Set Version') { 
+        stage('Set Version') {
             steps {
                 script {
                     try {
@@ -36,7 +38,7 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') { 
+        stage('Install Dependencies') {
             steps {
                 script {
                     try {
@@ -52,7 +54,7 @@ pipeline {
             }
         }
 
-        stage('Docker Build') { 
+        stage('Docker Build') {
             when {
                 expression { currentBuild.result == null }
             }
@@ -67,12 +69,15 @@ pipeline {
             }
         }
 
-        stage('Setup Server with Ansible') { 
+        stage('Setup Server with Ansible') {
             steps {
                 script {
                     try {
                         withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
-                            ansiblePlaybook playbook: 'setup-server.yml', inventory: 'inventory.ini', extraVars: [ansible_ssh_private_key_file: "${SSH_KEY}"]
+                            withEnv(["PATH+ANSIBLE=${ANSIBLE_PATH}"]) {
+                                // Gunakan ansiblePlaybook dengan path yang sesuai
+                                ansiblePlaybook playbook: 'setup-server.yml', inventory: 'inventory.ini', extraVars: [ansible_ssh_private_key_file: "${SSH_KEY}"]
+                            }
                         }
                     } catch (Exception e) {
                         error "Ansible setup failed: ${e.message}"
@@ -81,12 +86,14 @@ pipeline {
             }
         }
 
-        stage('Deploy Application with Ansible') { 
+        stage('Deploy Application with Ansible') {
             steps {
                 script {
                     try {
                         withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
-                            ansiblePlaybook playbook: 'deploy-app.yml', inventory: 'inventory.ini', extraVars: [ansible_ssh_private_key_file: "${SSH_KEY}"]
+                            withEnv(["PATH+ANSIBLE=${ANSIBLE_PATH}"]) {
+                                ansiblePlaybook playbook: 'deploy-app.yml', inventory: 'inventory.ini', extraVars: [ansible_ssh_private_key_file: "${SSH_KEY}"]
+                            }
                         }
                     } catch (Exception e) {
                         error "Ansible deploy failed: ${e.message}"
